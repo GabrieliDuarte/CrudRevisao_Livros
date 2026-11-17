@@ -2,9 +2,9 @@ import { type Request, type Response } from "express";
 import { livrosService } from "../services/livros.service.js";
 
 class LivrosController {
- async getALL(req:Request,res:Response){
+ async getAll(req:Request,res:Response){
     try {
-        const livros = await livrosService.getALL();
+        const livros = await livrosService.getAll();
         return res.json(livros)
         
     } catch (error) {

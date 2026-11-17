@@ -2,8 +2,8 @@ import { livrosRepositorie } from "../repositories/livros.repositorie.js";
 import type { CriarLivros } from "../types/livros.types.js";
 
 class LivrosService {
- async getALL(){
-    const livros = await livrosRepositorie.getALL();
+ async getAll(){
+    const livros = await livrosRepositorie.getAll();
     return livros;
  }
 
